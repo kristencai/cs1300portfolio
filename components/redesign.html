@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Redesign</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="redesign-project">
+    <a href="../index.html#projects" class="back-link">Back</a>
+    <h1>Responsive Redesign</h1>
+
+    <h2>Overview</h2>
+    <div class="personas-container">
+      <p>
+        Many web pages have usability issues pertaining to design, learnability,
+        and accessibility.<br /><br />
+        Milkcow Café IL serves ice cream and café drinks in Vernon Hills, IL.
+        The Vernon Hills franchise has its own website that I chose to redesign.
+        While the content is straightforward, it is presented in a way that feels
+        cluttered and lacks visual cohesion.
+      </p>
+    </div>
+
+    <h2>Usability Problems</h2>
+    <div class="mockup-item">
+      <a
+        href="https://www.milkcowil.com/"
+        target="_blank"
+        rel="noopener"
+        class="clickable-site"
+      >
+        <img src="../images/milkcow/original.png" alt="Original Website" />
+      </a>
+      <div class="mockup-text">
+        <p>
+          The current home page of Milkcow has a few issues that make it hard for users to navigate:
+        </p>
+        <ul>
+          <li>Low color contrast for text and background</li>
+          <li>Font and color choices make the navigation bar hard to read</li>
+          <li>Non‑cohesive background images</li>
+          <li>Redundant images and buttons, repeated information</li>
+          <li>Inconsistent image sizing</li>
+          <li>Unintuitive oval social media icons</li>
+          <li>Uninformative alt text</li>
+          <li>Unintuitive links (the hours link to online ordering)</li>
+        </ul>
+        <p>
+          WebAIM WAVE, an online accessibility tool, reports 23 contrast errors and
+          21 alt text errors, corroborating my own findings.
+        </p>
+      </div>
+    </div>
+
+    <h2>Visual Redesign</h2>
+    <div class="mockup-item">
+      <p class="mockup-text">
+        First, I used Figma to create a visual style guide with a more cohesive
+        color scheme and font style.
+      </p>
+      <img src="../images/milkcow/components.png" class="components" alt="Style guide components" />
+    </div>
+
+    <div class="mockups">
+      <div class="mockup-item">
+        <img src="../images/milkcow/computer.png" class="computer" alt="Computer Mockup" />
+        <div class="mockup-text">
+          <p>Next, I designed a computer mockup.</p>
+          <ul>
+            <li>Simplified the original site down to a few sections.</li>
+            <li>Removed redundant images/buttons.</li>
+            <li>Increased font weight &amp; high‑contrast colors.</li>
+            <li>Used flexbox for layout.</li>
+            <li>Hover states for buttons &amp; nav bar.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mockup-item">
+        <img src="../images/milkcow/tablet.png" class="tablet" alt="Tablet Mockup" />
+        <img src="../images/milkcow/phone.png" class="phone" alt="Phone Mockup" />
+        <div class="mockup-text">
+          <p>To demonstrate responsiveness for smaller screens:</p>
+          <ul>
+            <li>Cover text/image switch from horizontal to vertical.</li>
+            <li>Image grid collapses on narrow widths.</li>
+            <li>Nav bar collapses below a breakpoint.</li>
+            <li>Images crop gracefully.</li>
+            <li>Most font sizes stay constant.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>Final Responsive Redesign</h2>
+    <div class="mockup-item">
+      <a
+        href="https://redesign-virid.vercel.app/"
+        target="_blank"
+        rel="noopener"
+        class="clickable-site"
+      >
+        <img src="../images/milkcow/final.png" alt="Final Redesigned Website" />
+      </a>
+      <div class="mockup-text">
+        <p>
+          My <a href="https://redesign-virid.vercel.app/" class="links">final deployed webpage</a>
+          addresses the original design, learnability, and accessibility issues.
+        </p>
+        <ul>
+          <li>Added informative alt text to all images</li>
+          <li>Only added links intuitively (e.g. in the nav bar)</li>
+          <li>Tested usability on all screen sizes</li>
+        </ul>
+        <p>
+          WebAIM WAVE reports 0 contrast errors and 0 alt text errors on my redesigned page.
+          This project demonstrates the importance of web design for diverse users’ experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
