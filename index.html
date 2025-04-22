@@ -5,19 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kristen Cai</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <nav>
+    <div class="logo">Kristen Cai</div>
     <ul>
       <li><a href="#home">home</a></li>
-      <li><a href="#experience">experience</a></li>
       <li><a href="#projects">projects</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="https://drive.google.com/file/d/1soE55Q7YyAlxJgnLGBKKo_EOvgUH_QnU/view?usp=sharing" target="_blank">resume</a></li>
     </ul>
   </nav>
 
@@ -27,11 +28,13 @@
         <div class="intro-text">
           <h1 class="intro">hi, it's Kristen</h1>
           <p class="intro-paragraph">
-            I am a problem solver who turns ideas into impact.
+            I am a <span class="highlight">software engineer</span> who solves real problems for real people.
           </p>
           <p class="intro-tagline">
-            applied mathematics‑computer science @ brown<br>
-            graduating spring 2025
+            incoming forward deployed engineer at <span class="highlight">palantir</span><br>
+            previous worked with <span class="highlight">cisco, zebra technologies</span><br>
+            graduating from <span class="highlight">brown</span> spring 2025
+
           </p>
         </div>
           <img src="images/piano.png" alt="Piano" class="piano" />
@@ -39,49 +42,73 @@
     </div>
   </section>
   
-  
 
-  <section id="experience">
-    <div class="experience">
-      <div class="experience-header">
-        <h2>experience</h2>
-      </div>
-      <div class="experience-boxes">
-        <div class="experience-box">
-          <h3>incoming forward deployed software engineer @ palantir</h3>
-          <p>july 2025</p>
-        </div>
-        <div class="experience-box">
-          <h3>head teaching assistant csci0170: computer science, an integrated introduction</h3>
-          <p>fall 2023–2024</p>
-        </div>
-        <div class="experience-box">
-          <h3>software engineering intern @ cisco</h3>
-          <p>may–august 2023/2024</p>
-        </div>
-        <div class="experience-box">
-          <h3>software engineering intern @ zebra</h3>
-          <p>may–august 2022</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section id="projects">
     <div class="projects-container">
-      <h2 class="experience-header">projects</h2>
+      <h2 class="section-header">projects</h2>
       <div class="projects-grid">
-        <a href="components/accessible.html" class="project-card">
-          <h3>Accessible Search Bar</h3>
-        </a>
-        <a href="components/personas.html" class="project-card">
-          <h3>Personas &amp; Storyboarding</h3>
-        </a>
-        <a href="components/redesign.html" class="project-card">
-          <h3>Responsive Redesign</h3>
-        </a>
+      
+        <div class="project-item">
+          <a href="components/accessible.html" class="project-box">
+            <img src="images/projects/searchbar-card.png" alt="Accessible Search Bar screenshot" />
+          </a>
+          <div class="project-text">
+            <h3>Component Redesign</h3>
+            <p>Redesigned search bar interactions focusing on user intuition and accessibility.</p>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <a href="components/personas.html" class="project-box">
+            <img src="images/projects/personas-card.png" alt="Personas & Storyboarding visuals" />
+          </a>
+          <div class="project-text">
+            <h3>User Storyboarding</h3>
+            <p>Visualized users' real experiences based on interviews and product research.</p>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <a href="components/redesign.html" class="project-box">
+            <img src="images/projects/responsive-card.png" alt="Responsive Redesign mockup" />
+          </a>
+          <div class="project-text">
+            <h3>Milkcow Cafe </h3>
+            <p>Redesigned a web page with a focus on accessibility and branding.</p>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <a href="components/iterative.html" class="project-box">
+            <img src="images/projects/iterative-card.png" alt="Iterative Design snapshots" />
+          </a>
+          <div class="project-text">
+            <h3>Iterative Design</h3>
+            <p>Low‑fi to hi‑fi prototypes based on evaluation and critique.</p>
+          </div>
+        </div>
+        
       </div>
     </div>
+  </section>
+  
+
+
+  <section id="about">
+    <div class="projects-container">
+      <h2 class="section-header">about me</h2>
+      <div class="bio">
+        <p>Hi, it's Kristen! <br> I'm graduating with a Sc.B in 
+        Applied Mathematics from Brown University in May 2025. I'm originally from suburban Chicago
+        but will be in New York City post graduation. <br> <br> I came into college
+      knowing I liked problem solving, and decided to study computer science because of its 
+      focus on optimizing solutions. <br><br> In my free time, I love music! I grew up playing classical piano
+   but also like playing the violin, guitar, and drums.</p>
+        <img src="images/projects/profile.jpg">
+      </div>
+    </div>
+    
   </section>
 
 </body>
