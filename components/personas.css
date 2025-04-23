@@ -1,0 +1,102 @@
+.personas-project {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  
+  .personas-project h1 {
+    padding-top: 30px;
+  }
+   
+.personas-container {
+    padding: 40px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .prod-research {
+    padding-left: 50px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  .prod-research img {
+    width: 40%;
+    height: auto;
+  }
+  .prod-research p {
+    width: 40%;
+  }
+  
+  .user-research-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .interview-summary {
+    width: 20%;
+  }
+  .interview-questions {
+    width: 60%;
+  }
+  
+  .personas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  .personas img {
+    width: 32%;
+    height: auto;
+  }
+  .persona-caption {
+    width: 20%;
+  }
+  
+  .storyboard-container {
+    padding-left: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .storyboard-container img {
+    width: 60%;
+    height: auto;
+  }
+  .storyboard-container p {
+    width: 30%;
+  }
+  
+  @media (max-width: 768px) {
+    .prod-research,
+    .user-research-container,
+    .personas,
+    .storyboard-container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+    .prod-research img,
+    .prod-research p,
+    .interview-summary,
+    .interview-questions,
+    .personas img,
+    .persona-caption,
+    .storyboard-container img,
+    .storyboard-container p {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .prod-research,
+    .user-research-container,
+    .personas,
+    .storyboard-container {
+      gap: 20px;
+    }
+  }
+  

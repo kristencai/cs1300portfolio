@@ -6,52 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accessible Search Bar</title>
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="accessible.css" />
 </head>
 <body>
   <div class="accessible-project">
-    <a href="../index.html#projects" class="back-link">Back</a>
+    <a href="../index.html#projects" class="back-link">← Back</a>
     <h1>Component Redesign: Search Bar</h1>
 
     <div class="searchbar-container">
-      <div class="overview">
-        <h2>Overview</h2>
-        <p>
-          It is crucial for web components to incorporate accessibility
-          into user interactions for different forms of input (mouse, keyboard)
-          and output (visual cues, labels for screen readers). I looked at the
-          accessibility of search bars and redesigned one to make it more accessible.
-        </p>
-      </div>
+      <h2>Overview</h2>
+      <p>
+        It is crucial for web components to incorporate accessibility
+        into user interactions for different forms of input (mouse, keyboard)
+        and output (visual cues, labels for screen readers). I looked at the
+        accessibility of search bars and redesigned one to make it more accessible.
+      </p>
 
       <h2>Application Research</h2>
+      <p>I started by researching Safari, Spotify, and Apple Mail's search bar components.</p>
+
       <div class="app-research">
         <div class="image-display">
           <div class="image-text">
             <table>
               <tr><td>Safari</td><td>Inputs</td><td>Outputs</td></tr>
-              <tr><td>Mouse &amp; Touchpad</td>
-                  <td>can click (double, triple), drag, highlight, but search icon does not click</td>
-                  <td>click highlights outline and cursor, screenreader gives instructions and reads out letters</td>
+              <tr>
+                <td>Mouse &amp; Touchpad</td>
+                <td>can click (double, triple), drag, highlight, but search icon does not click</td>
+                <td>click highlights outline and cursor, screenreader gives instructions and reads out letters</td>
               </tr>
-              <tr><td>Keyboard</td>
-                  <td>copy paste highlight shortcuts, esc to exit, ⌘+F to enter</td>
-                  <td>focus order slow to navigate to search results</td>
+              <tr>
+                <td>Keyboard</td>
+                <td>copy paste highlight shortcuts, esc to exit, ⌘+F to enter</td>
+                <td>focus order slow to navigate to search results</td>
               </tr>
-              <tr><td>Touch</td>
-                  <td>tap (double and triple), x to navigate out</td>
-                  <td>tap gives you options to share, select</td>
+              <tr>
+                <td>Touch</td>
+                <td>tap (double and triple), x to navigate out</td>
+                <td>tap gives you options to share, select</td>
               </tr>
             </table>
           </div>
-          <div>
-            <div class="image-wrapper">
-              <img src="../images/safari/initial.png" class="carousel-image" alt="Safari initial" />
-            </div>
-            <div class="image-wrapper">
-              <img src="../images/safari/click.png" class="carousel-image" alt="Safari click" />
-            </div>
-          </div>
+          <img src="../images/safari/click.png"
+               class="carousel-image"
+               alt="Safari search click state" />
         </div>
+
         <div class="image-display">
           <div class="image-text">
             <table>
@@ -70,15 +70,11 @@
               </tr>
             </table>
           </div>
-          <div>
-            <div class="image-wrapper">
-              <img src="../images/spotify/hover.png" class="carousel-image" alt="Spotify hover" />
-            </div>
-            <div class="image-wrapper">
-              <img src="../images/spotify/active.png" class="carousel-image" alt="Spotify active" />
-            </div>
-          </div>
+          <img src="../images/spotify/hover.png"
+               class="carousel-image"
+               alt="Spotify search hover state" />
         </div>
+
         <div class="image-display">
           <div class="image-text">
             <table>
@@ -97,52 +93,56 @@
               </tr>
             </table>
           </div>
-          <div>
-            <div class="image-wrapper">
-              <img src="../images/mail/click.png" class="carousel-image" alt="Mail click" />
-            </div>
-            <div class="image-wrapper">
-              <img src="../images/mail/active.png" class="carousel-image" alt="Mail active" />
-            </div>
-          </div>
+          <img src="../images/mail/click.png"
+               class="carousel-image"
+               alt="Mail search click state" />
         </div>
-
       </div>
 
-      <h2>State Model</h2>
-      <div class="redesign-images">
-        <div class="labeled-state">
-          <img src="../images/redesign/initialstate.png" class="redesign" alt="Initial state model" />
-          <p>
-            The first state model demonstrates Safari's current search box.<br /><br />
-            The second one adds a hover effect for mouse users and a keyboard shortcut for keyboard users.
-          </p>
-        </div>
-        <img src="../images/redesign/redesignedstate.png" class="redesign2" alt="Redesigned state model" />
-      </div>
+      <p>
+        I found that the search bars I researched all had strengths and weaknesses.
+        I combined the best features into a redesigned Safari search bar.
+      </p>
+    
 
-      <h2>Component Redesign: Safari search bar</h2>
-      <div class="redesign-container">
-        <div class="redesign-images">
-          <img src="../images/redesign/initial.png" class="safari-bar" alt="Safari bar initial" />
-          <img src="../images/redesign/hover.png" class="safari-bar" alt="Safari bar hover" />
-        </div>
-        <p class="redesign-caption">
-          I redesigned Safari's search bar based off my state models.
+    <h2>State Model</h2>
+    <div class="redesign-images">
+      <div class="labeled-state">
+        <img src="../images/redesign/initialstate.png"
+             class="redesign"
+             alt="Initial state model" />
+        <p>
+          The first state model demonstrates Safari's current search box.<br /><br />
+          The second state model adds a hover effect for mouse users, increasing efficiency.
+          It also adds a keyboard shortcut for keyboard users, increasing accessibility.
         </p>
       </div>
+      <img src="../images/redesign/redesignedstate.png"
+           class="redesign2"
+           alt="Redesigned state model" />
+    </div>
 
-      <h2>Reflection</h2>
-      <p class="reflection">
-        The changes I added are only a small part of increasing accessibility. The
-        search bars I observed all have good support for keyboard actions, mouse
-        clicks, and highlighting. Additional changes include increasing screen‑
-        reader support and changing font size according to system settings.<br /><br />
-        Often, mouse and touchscreen inputs are more commonly prioritized, which can
-        make it harder to search or understand the screen context for users who only
-        use a keyboard or who rely on a screen reader.
+    <h2>Final Redesign</h2>
+    <div class="redesign-container">
+      <img src="../images/redesign/search bar.png"
+           class="safari-bar"
+           alt="Redesigned Safari search bar" />
+      <p>
+        I redesigned Safari's search bar based off my state models. <br><br>
+        Adding a keyboard shortcut increases accessibility, but I chose to decrease learnability as it is not
+        a commonly used shortcut. <br><br> Similarly, while adding a hover effect is more efficient for mouse users, this 
+        is not a feature keyboard users benefit from.
       </p>
     </div>
+
+    <h2>Next Steps</h2>
+    <p>
+      The changes I added are only a small part of increasing accessibility. The
+      search bars I observed all have good support for keyboard actions, mouse
+      clicks, and highlighting. Additional changes include increasing screen-
+      reader support and changing font size according to system settings.
+    </p>
   </div>
+</div>
 </body>
 </html>

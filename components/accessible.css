@@ -1,0 +1,157 @@
+
+.accessible-project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .app-research,
+  .image-display,
+  .redesign-images,
+  .redesign-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .image-text {
+    flex: 1 1 250px;       
+    min-width: 200px;
+  }
+  .carousel-image {
+    flex: 0 0 auto;       
+    max-width: 384px;      
+    width: 100%;           
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .image-text {
+    overflow-x: auto;
+  }
+  .image-text table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+  }
+
+  .accessible-project {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+
+  .accessible-project h1 {
+    padding-top: 30px;
+  }
+  
+  
+  .searchbar-container,
+  .accessible-project {
+    padding: 2rem 1rem;
+  }
+
+  .searchbar-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .searchbar-container p {
+    padding: 5px;
+    max-width: 90%;
+  }
+  
+  @media (max-width: 768px) {
+    .app-research,
+    .image-display,
+    .redesign-images,
+    .redesign-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .image-text table th,
+    .image-text table td {
+      padding: 0.25rem;
+      font-size: 0.85rem;
+    }
+  }
+  
+
+  .app-research {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .image-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 10px auto;
+    margin-left: 50px;
+    margin-bottom: 40px;
+  }
+
+  .image-text {
+    width: 60%; 
+    font-size: 1.0rem;
+    padding-left: 20px;
+    margin-right: 0;
+  }
+
+  .carousel-image {
+    display: block;
+    width: 384px;          
+    max-width: 100%;  
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .redesign-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    gap: 20px;  
+    padding: 20px;
+    height: auto;
+  }
+  
+  .labeled-state {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .redesign-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .redesign-container img {
+    max-width: 40%;
+  }
+
+  .redesign {
+    width: 60%;  
+    height: auto;  
+    object-fit: contain; 
+  }
+
+
+.safari-bar {
+    width: 90%;
+  }
