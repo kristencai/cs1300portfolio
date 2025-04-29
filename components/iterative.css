@@ -1,0 +1,63 @@
+.iterative-project {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+  }
+  
+  .iterative-project h1 {
+    padding-top: 30px;
+  }
+  ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+  }
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .images .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+    .images .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .images .row {
+      grid-template-columns: 1fr;
+    }
+    
+    .iterative-project,
+    .intro,
+    .sketches,
+    .wireframe,
+    .hifi,
+    .testing,
+    .conclusion {
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+    }
+  }
+  
+
+  
