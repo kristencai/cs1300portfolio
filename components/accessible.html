@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,28 +9,37 @@
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="accessible.css" />
 </head>
+
 <body>
   <div class="accessible-project">
     <a href="../index.html#projects" class="back-link">← Back</a>
-    <h1>Component Redesign: Search Bar</h1>
+    <div class="section-header">
+      <h1>Component Redesign</h1>
+      <img src="../images/piano.png" alt="Piano Icon" class="section-icon" />
+    </div>
 
     <div class="searchbar-container">
+      <p>Timeline: February 2025 <br>Skills: Figma <br> </p>
       <h2>Overview</h2>
       <p>
         It is crucial for web components to incorporate accessibility
         into user interactions for different forms of input (mouse, keyboard)
-        and output (visual cues, labels for screen readers). I looked at the
-        accessibility of search bars and redesigned one to make it more accessible.
+        and output (visual cues, labels for screen readers). <br> <br>I researched the
+        accessibility of commonly used search bars and redesigned one to make it more accessible.
       </p>
 
       <h2>Application Research</h2>
-      <p>I started by researching Safari, Spotify, and Apple Mail's search bar components.</p>
+      <p>I researched Safari, Spotify, and Apple Mail's search bar components.</p>
 
       <div class="app-research">
         <div class="image-display">
           <div class="image-text">
             <table>
-              <tr><td>Safari</td><td>Inputs</td><td>Outputs</td></tr>
+              <tr>
+                <td>Safari</td>
+                <td>Inputs</td>
+                <td>Outputs</td>
+              </tr>
               <tr>
                 <td>Mouse &amp; Touchpad</td>
                 <td>can click (double, triple), drag, highlight, but search icon does not click</td>
@@ -47,102 +57,105 @@
               </tr>
             </table>
           </div>
-          <img src="../images/safari/click.png"
-               class="carousel-image"
-               alt="Safari search click state" />
+          <img src="../images/safari/click.png" class="carousel-image" alt="Safari search click state" />
         </div>
 
         <div class="image-display">
           <div class="image-text">
             <table>
-              <tr><td>Spotify</td><td>Inputs</td><td>Outputs</td></tr>
-              <tr><td>Mouse &amp; Touchpad</td>
-                  <td>can click (double, triple), drag, highlight, search icon clicks</td>
-                  <td>click/hover highlights outline, screenreader does not read what you type or highlight</td>
+              <tr>
+                <td>Spotify</td>
+                <td>Inputs</td>
+                <td>Outputs</td>
               </tr>
-              <tr><td>Keyboard</td>
-                  <td>copy paste highlight shortcuts, esc deletes, ⇧+⌘+K to search</td>
-                  <td>focus order good to go to search results but slow to navigate back</td>
+              <tr>
+                <td>Mouse &amp; Touchpad</td>
+                <td>can click (double, triple), drag, highlight, search icon clicks</td>
+                <td>click/hover highlights outline, screenreader does not read what you type or highlight</td>
               </tr>
-              <tr><td>Touch</td>
-                  <td>tap (double and triple), cancel button or swipe up to navigate out</td>
-                  <td>tap gives you option to autofill</td>
+              <tr>
+                <td>Keyboard</td>
+                <td>copy paste highlight shortcuts, esc deletes, ⇧+⌘+K to search</td>
+                <td>focus order good to go to search results but slow to navigate back</td>
+              </tr>
+              <tr>
+                <td>Touch</td>
+                <td>tap (double and triple), cancel button or swipe up to navigate out</td>
+                <td>tap gives you option to autofill</td>
               </tr>
             </table>
           </div>
-          <img src="../images/spotify/hover.png"
-               class="carousel-image"
-               alt="Spotify search hover state" />
+          <img src="../images/spotify/hover.png" class="carousel-image" alt="Spotify search hover state" />
         </div>
 
         <div class="image-display">
           <div class="image-text">
             <table>
-              <tr><td>Mail</td><td>Inputs</td><td>Outputs</td></tr>
-              <tr><td>Mouse &amp; Touchpad</td>
-                  <td>can click (double, triple), drag, highlight, but search icon does not click</td>
-                  <td>click highlights outline and cursor, screenreader says “toolbar,” not search, reads out as you type</td>
+              <tr>
+                <td>Mail</td>
+                <td>Inputs</td>
+                <td>Outputs</td>
               </tr>
-              <tr><td>Keyboard</td>
-                  <td>copy paste highlight shortcuts, esc to exit, tab to enter</td>
-                  <td>focus order goes to mailboxes, not to results</td>
+              <tr>
+                <td>Mouse &amp; Touchpad</td>
+                <td>can click (double, triple), drag, highlight, but search icon does not click</td>
+                <td>click highlights outline and cursor, screenreader says “toolbar,” not search, reads out as you type
+                </td>
               </tr>
-              <tr><td>Touch</td>
-                  <td>tap (double and triple), x or swipe up to navigate out</td>
-                  <td>tap and release tap lightens search bar</td>
+              <tr>
+                <td>Keyboard</td>
+                <td>copy paste highlight shortcuts, esc to exit, tab to enter</td>
+                <td>focus order goes to mailboxes, not to results</td>
+              </tr>
+              <tr>
+                <td>Touch</td>
+                <td>tap (double and triple), x or swipe up to navigate out</td>
+                <td>tap and release tap lightens search bar</td>
               </tr>
             </table>
           </div>
-          <img src="../images/mail/click.png"
-               class="carousel-image"
-               alt="Mail search click state" />
+          <img src="../images/mail/click.png" class="carousel-image" alt="Mail search click state" />
         </div>
       </div>
 
       <p>
-        I found that the search bars I researched all had strengths and weaknesses.
-        I combined the best features into a redesigned Safari search bar.
+        I combined the best features into a redesigned Safari search bar on Figma.
       </p>
-    
 
-    <h2>State Model</h2>
-    <div class="redesign-images">
-      <div class="labeled-state">
-        <img src="../images/redesign/initialstate.png"
-             class="redesign"
-             alt="Initial state model" />
+
+      <h2>State Model</h2>
+      <div class="redesign-images">
+        <div class="labeled-state">
+          <img src="../images/redesign/initialstate.png" class="redesign" alt="Initial state model" />
+          <p>
+            The first state model demonstrates Safari's current search box.<br /><br />
+            The second state model: <br> - adds a hover effect for mouse users, increasing efficiency.
+            <br>- adds a keyboard shortcut for keyboard users, increasing accessibility
+          </p>
+        </div>
+        <img src="../images/redesign/redesignedstate.png" class="redesign2" alt="Redesigned state model" />
+      </div>
+
+      <h2>Final Redesign</h2>
+      <div class="redesign-container">
+        <img src="../images/redesign/search bar.png" class="safari-bar" alt="Redesigned Safari search bar" />
         <p>
-          The first state model demonstrates Safari's current search box.<br /><br />
-          The second state model adds a hover effect for mouse users, increasing efficiency.
-          It also adds a keyboard shortcut for keyboard users, increasing accessibility.
+          I redesigned Safari's search bar based off my state models. <br><br>
+          Adding a keyboard shortcut increases accessibility, but decreases learnability as it is not
+          a commonly used shortcut. <br><br> Similarly, while adding a hover effect is more efficient for mouse users,
+          this
+          is not a feature keyboard users benefit from.
         </p>
       </div>
-      <img src="../images/redesign/redesignedstate.png"
-           class="redesign2"
-           alt="Redesigned state model" />
-    </div>
 
-    <h2>Final Redesign</h2>
-    <div class="redesign-container">
-      <img src="../images/redesign/search bar.png"
-           class="safari-bar"
-           alt="Redesigned Safari search bar" />
+      <h2>Next Steps</h2>
       <p>
-        I redesigned Safari's search bar based off my state models. <br><br>
-        Adding a keyboard shortcut increases accessibility, but I chose to decrease learnability as it is not
-        a commonly used shortcut. <br><br> Similarly, while adding a hover effect is more efficient for mouse users, this 
-        is not a feature keyboard users benefit from.
+        The changes I added are only a small part of increasing accessibility. Additional changes include increasing
+        screen-
+        reader support and changing font size according to system settings.
       </p>
     </div>
-
-    <h2>Next Steps</h2>
-    <p>
-      The changes I added are only a small part of increasing accessibility. The
-      search bars I observed all have good support for keyboard actions, mouse
-      clicks, and highlighting. Additional changes include increasing screen-
-      reader support and changing font size according to system settings.
-    </p>
   </div>
-</div>
 </body>
+
 </html>

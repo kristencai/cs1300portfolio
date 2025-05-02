@@ -1,100 +1,96 @@
 
 .redesign-project {
-    padding-left: 70px;
-    padding-top: 30px;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.redesign-project h1 {
+  padding-top: 30px;
+}
+
+.overview-container {
+  padding: 40px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mockup-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.mockup-text {
+  font-size: 1rem;
+  width: 35%;
+}
+
+.clickable-site {
+  width: 50%;
+}
+.clickable-site img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+.clickable-site img:hover {
+  filter: brightness(80%);
+}
+
+.components {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.computer {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.tablet,
+.phone {
+  height: auto;
+  object-fit: contain;
+}
+.tablet { width: 30%; }
+.phone  { width: 20%; }
+
+
+@media (max-width: 768px) {
+  .redesign-project {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  .redesign-project h1 {
-    padding-top: 30px;
-  }
-  
-  .mockups {
-    display: flex;
+
+  .mockup-item {
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
     gap: 20px;
   }
-  
-  .mockup-item {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 50px;
-  }
-  
-  .mockup-text {
-    font-size: 1rem;
-    width: 35%;
-  }
-  
-  .clickable-site {
-    width: 50%;
-  }
-  .clickable-site img {
-    width: 100%;
-    transition: 0.2s ease-in-out;
-  }
-  .clickable-site img:hover {
-    filter: brightness(80%);
-  }
-  
-  .components {
-    width: 50%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .computer {
-    width: 60%;
-    height: auto;
-    object-fit: contain;
-  }
-  
+
+  .mockup-text,
+  .clickable-site,
+  .components,
+  .computer,
   .tablet,
   .phone {
-    height: auto;
-    object-fit: contain;
+    width: 100% !important;
   }
-  .tablet { width: 30%; }
-  .phone  { width: 20%; }
-  
 
-  
-  @media (max-width: 768px) {
-    .redesign-project {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .mockup-item {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      gap: 20px;
-    }
-  
-    .mockup-text,
-    .clickable-site,
-    .components,
-    .computer,
-    .tablet,
-    .phone {
-      width: 100% !important;
-    }
-  
-    .mockup-text {
-      text-align: center;
-    }
+  .mockup-text {
+    text-align: center;
   }
-  
-  @media (max-width: 480px) {
-    .mockup-item {
-      padding: 10px;
-      gap: 10px;
-    }
-    .mockup-text {
-      font-size: 0.95rem;
-    }
-  }
-  
+}
